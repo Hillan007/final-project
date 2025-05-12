@@ -21,7 +21,7 @@ This project analyzes COVID-19 data from Our World in Data using Python, pandas,
 1. **Download the dataset**: [owid-covid-data.csv](https://ourworldindata.org/coronavirus-data)
 2. **Clone the repository**:
    ```bash
-   git clone 
+   git clone https://github.com/Hillan007/final-project 
    cd
 
    - Install dependencies:
