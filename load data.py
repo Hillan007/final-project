@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv("owid-covid-data.csv")
+df = pd.read_csv("country_wise_latest.csv")
 
 # View the first few rows
 print(df.head())
