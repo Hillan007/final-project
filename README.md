@@ -1,36 +1,88 @@
-# final-project
-# COVID-19 Data Analysis 📊
+# COVID-19 Data Analysis Project
 
-## Description
-This project analyzes COVID-19 data from Our World in Data using Python, pandas, and visualization libraries. It provides insights into cases, deaths, and vaccination trends across different countries.
+## Overview
+This project analyzes COVID-19 data across different countries using Python, focusing on visualizing trends and comparing statistics between major nations including the United States, India, and Brazil.
 
-## Objectives
-- Load and clean COVID-19 data for analysis.
-- Explore trends in cases, deaths, and vaccinations.
-- Visualize patterns using graphs and charts.
-- Generate key insights from the data.
+## Features
+- Data cleaning and validation
+- Visualization of COVID-19 cases trends
+- Death rate analysis
+- Vaccination progress tracking
+- Country-wise comparisons
 
-## Tools & Libraries Used
-- **Python** (Programming language)
-- **pandas** (Data manipulation)
-- **matplotlib & seaborn** (Visualization)
-- **Jupyter Notebook** (Development environment)
-- **Plotly** (Optional for interactive maps)
+## Requirements
+- Python 3.x
+- Required packages:
+```bash
+pip install pandas matplotlib seaborn
+```
 
-## How to Run/View the Project
-1. **Download the dataset**: [owid-covid-data.csv](https://ourworldindata.org/coronavirus-data)
-2. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Hillan007/final-project 
-   cd
+## Project Structure
+```
+week8/
+│
+├── analyze_deaths.py      # Death rate analysis
+├── clean.py              # Data cleaning script
+├── vaccination.py        # Vaccination data analysis
+├── visual_trends.py      # Trend visualization
+└── country_wise_latest.csv    # Dataset
+```
 
-   - Install dependencies:
-pip install pandas matplotlib seaborn plotly
-- Run Jupyter Notebook:
-jupyter notebook
-- Open the analysis notebook and explore the visualizations.
-Insights & Reflections- Global Trends: Observing changes in case and death rates across time.
-- Death Rate Analysis: Understanding fatality percentages per country.
-- Vaccination Progress: Comparing rollout speeds across nations.
-- Data Challenges: Handling missing values and inconsistencies in reporting.
-   This project provides valuable insights into COVID-19 trends, helping to understand the impact of the pandemic through data.
+## Data Source
+The analysis uses the `country_wise_latest.csv` dataset, which includes:
+- Country/Region information
+- Confirmed cases
+- Death counts
+- Other COVID-19 related metrics
+
+## Scripts Description
+
+### visual_trends.py
+- Creates line plots showing COVID-19 case trends
+- Compares data across United States, India, and Brazil
+- Includes error handling and data validation
+
+### analyze_deaths.py
+- Calculates and visualizes death rates
+- Provides country-wise death rate comparisons
+- Includes data validation and error handling
+
+### clean.py
+- Handles missing values
+- Filters relevant countries
+- Saves cleaned data for analysis
+
+## How to Run
+1. Clone the repository
+2. Install required packages:
+```bash
+pip install pandas matplotlib seaborn
+```
+3. Run the scripts:
+```bash
+python visual_trends.py
+python analyze_deaths.py
+python clean.py
+```
+
+## Error Handling
+- File not found errors
+- Data validation
+- Empty dataset handling
+- Missing value management
+
+## Visualization Features
+- Grid-style plots using Seaborn
+- Rotated x-axis labels for better readability
+- Clear legends and titles
+- Proper figure sizing and layout
+
+## Future Improvements
+- Add more countries for comparison
+- Include time series analysis
+- Add interactive visualizations
+- Implement automated data updates
+
+## Author
+Victor Hillan Muthomi
+
